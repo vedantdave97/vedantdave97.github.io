@@ -57,47 +57,36 @@
 
 
 
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+    <tr onmouseout="m2curl_stop()" onmouseover="m2curl_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
           <img src='images/smerf.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
+          function m2curl_start() {
+            document.getElementById('m2curl_image').style.opacity = "1";
           }
 
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
+          function m2curl_stop() {
+            document.getElementById('m2curl_image').style.opacity = "0";
           }
-          smerf_stop()
+          m2curl_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://smerf-3d.github.io/">
-          <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
+        <a href="https://sites.google.com/view/M2CURL/home">
+          <span class="papertitle">M2CURL: Sample-Efficient Multimodal Reinforcement Learning via Self-Supervised Representation Learning for Robotic Manipulation</span>
         </a>
         <br>
-		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth*</a>,
-		<a href="https://phogzone.com/">Peter Hedman*</a>,
-		<a href="https://creiser.github.io/">Christian Reiser</a>,
-		<a href="">Peter Zhizhin</a>,
-		<a href="">Jean-François Thibert</a>,
-        <a href="https://lucic.ai/">Mario Lučić</a>,
-        <a href="https://szeliski.org/">Richard Szeliski</a>,
-		<strong>Jonathan T. Barron</strong>
+		<a href="https://cps.unileoben.ac.at/fotios-lygerakis-m-sc/">Fotios Lygerakis</a>,
+		<strong>Vedant Dave</strong>,
+		<a href="https://cps.unileoben.ac.at/prof-elmar-rueckert/">Elmar Rueckert</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>arXiv</em> 2024
         <br>
-        <a href="https://smerf-3d.github.io/">project page</a>
+        <a href="https://sites.google.com/view/M2CURL/home">project page</a>
         /
-        <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a>
-        /
-        <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+        <a href="https://arxiv.org/abs/2401.17032">paper</a>
         <p></p>
         <p>
         Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
@@ -106,7 +95,7 @@
     </tr>
 	
 
-    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+    <tr onmouseout="mvitac_stop()" onmouseover="mvitac_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
@@ -116,34 +105,32 @@
           <img src='images/nuvo.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function nuvo_start() {
+          function mvitac_start() {
             document.getElementById('nuvo_image').style.opacity = "1";
           }
 
-          function nuvo_stop() {
+          function mvitac_stop() {
             document.getElementById('nuvo_image').style.opacity = "0";
           }
-          nuvo_stop()
+          mvitac_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://pratulsrinivasan.github.io/nuvo/">
-          <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
+          <span class="papertitle">Multimodal Visual-Tactile Representation Learning through Self-Supervised Contrastive Pre-Training</span>
         </a>
         <br>
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        <strong>Vedant Dave*</strong>,
+        <a href="https://cps.unileoben.ac.at/fotios-lygerakis-m-sc/">Fotios Lygerakis*</a>,
+        <a href="https://cps.unileoben.ac.at/prof-elmar-rueckert/">Elmar Rueckert</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>ICRA</em> 2024
         <br>
-        <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+        <a href="https://sites.google.com/view/mvitac/home">project page</a>
         /
-        <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+        <a href="https://github.com/ligerfotis/mvitac">code</a>
         /
-        <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+        <a href="https://arxiv.org/abs/2401.12024">paper</a>
         <p></p>
         <p>
         Neural fields let you recover editable UV mappings for the challenging geometries produced by NeRF-like models.
@@ -152,7 +139,7 @@
     </tr>
 	
 	
-    <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+    <tr onmouseout="tac_stop()" onmouseover="tac_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
@@ -162,38 +149,29 @@
           <img src='images/recon.png' width="160">
         </div>
         <script type="text/javascript">
-          function recon_start() {
+          function tac_start() {
             document.getElementById('recon_image').style.opacity = "1";
           }
 
-          function recon_stop() {
+          function tac_stop() {
             document.getElementById('recon_image').style.opacity = "0";
           }
-          recon_stop()
+          tac_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://reconfusion.github.io/">
-			<span class="papertitle">ReconFusion: 3D Reconstruction with Diffusion Priors</span>
+			<span class="papertitle">Predicting full-arm grasping motions from anticipated tactile responses</span>
         </a>
         <br>
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
-		<a href="https://bmild.github.io/">Ben Mildenhall*</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>,
-        <a href="https://holynski.org/">Aleksander Holynski*</a>
+		    <strong>Vedant Dave</strong>,
+        <a href="https://cps.unileoben.ac.at/prof-elmar-rueckert/">Elmar Rueckert</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>Humanoids</em> 2022 <strong>(Oral Presentation)</strong>
         <br>
         <a href="https://reconfusion.github.io/">project page</a>
         /
-        <a href="https://arxiv.org/abs/">arXiv</a>
+        <a href="https://arxiv.org/abs/">paper</a>
         <p></p>
         <p>
         Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
@@ -202,7 +180,7 @@
     </tr>
 
 
-<tr onmouseout="difsurvey_stop()" onmouseover="difsurvey_start()">
+<tr onmouseout="ori_stop()" onmouseover="ori_start()">
   <td style="padding:20px;width:25%;vertical-align:middle">
     <div class="one">
     <div class="two" id='difsurvey_image'><video  width=100% height=100% muted autoplay loop>
@@ -212,46 +190,30 @@
       <img src='images/difsurvey_image.jpg' width="160">
     </div>
     <script type="text/javascript">
-      function difsurvey_start() {
+      function ori_start() {
         document.getElementById('difsurvey_image').style.opacity = "1";
       }
 
-      function difsurvey_stop() {
+      function ori_stop() {
         document.getElementById('difsurvey_image').style.opacity = "0";
       }
-      difsurvey_stop()
+      ori_stop()
     </script>
   </td>
   <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://arxiv.org/abs/2310.07204">
-      <span class="papertitle">State of the Art on Diffusion Models for Visual Computing
-</span>
+    <a href="https://proceedings.mlr.press/v164/rozo22a.html">
+      <span class="papertitle">Orientation Probabilistic Movement Primitives on Riemannian Manifolds</span>
     </a>
     <br>
-	<a href="https://ryanpo.com/">Ryan Po</a>,
-	<a href="https://yifita.netlify.app/">Wang Yifan</a>,
-	<a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>,
-	<a href="https://kfiraberman.github.io/">Kfir Aberman</a>,
-	<strong>Jonathan T. Barron</strong>,
-	<a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
-	<a href="https://ericryanchan.github.io/">Eric Ryan Chan</a>,
-	<a href="https://www.weizmann.ac.il/math/dekel/home">Tali Dekel</a>,
-	<a href="https://holynski.org/">Aleksander Holynski</a>,
-	<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>,
-	<a href="https://tml.stanford.edu/">C. Karen Liu</a>,
-	<a href="https://lingjie0206.github.io/">Lingjie Liu</a>,
-	<a href="https://bmild.github.io/">Ben Mildenhall</a>,
-    <a href="https://www.niessnerlab.org/">Matthias Nießner</a>,
-	<a href="https://ommer-lab.com/people/ommer/">Björn Ommer</a>,
-	<a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt</a>,
-	<a href="https://peterwonka.net/">Peter Wonka</a>,
-    <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>
+    <a href="https://cps.unileoben.ac.at/prof-elmar-rueckert/">Leonel Rozo*</a>,
+    <strong>Vedant Dave</strong>
     <br>
-	<em>arXiv<em>, 2023
+    <em>CoRL</em> 2021
     <br>
+    <a href="https://proceedings.mlr.press/v164/rozo22a.html">paper</a>
     <p></p>
     <p>
-    A survey of recent progress in diffusion models for images, videos, and 3D.
+    Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
     </p>
   </td>
 </tr>          
