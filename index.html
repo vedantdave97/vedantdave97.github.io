@@ -145,6 +145,44 @@
     </tr>
 	
 	
+    <tr onmouseout="tac2_stop()" onmouseover="tac2_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/recon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/recon.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function tac2_start() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+
+          function tac2_stop() {
+            document.getElementById('recon_image').style.opacity = "0";
+          }
+          tac2_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://drive.google.com/file/d/18BSlOC-HrYdrfAL3RiHjF7a6RNmDrgDo/view">
+			<span class="papertitle">Can we infer the full-arm manipulation skills from tactile targets?</span>
+        </a>
+        <br>
+		    <strong>Vedant Dave</strong>,
+        <a href="https://cps.unileoben.ac.at/prof-elmar-rueckert/">Elmar Rueckert</a>
+        <br>
+        <em>Workshop on Advances in Close Proximity Human-Robot Collaboration, Humanoids</em> 2022
+        <br>
+        <a href="https://drive.google.com/file/d/18BSlOC-HrYdrfAL3RiHjF7a6RNmDrgDo/view">paper</a>
+        <p></p>
+        <p>
+        Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
+        </p>
+      </td>
+    </tr>
+
     <tr onmouseout="tac_stop()" onmouseover="tac_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -166,7 +204,7 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://reconfusion.github.io/">
+        <a href="https://ieeexplore.ieee.org/abstract/document/9999743/">
 			<span class="papertitle">Predicting full-arm grasping motions from anticipated tactile responses</span>
         </a>
         <br>
@@ -175,9 +213,7 @@
         <br>
         <em>Humanoids</em> 2022 <strong>(Oral Presentation)</strong>
         <br>
-        <a href="https://reconfusion.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/">paper</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/9999743/">paper</a>
         <p></p>
         <p>
         Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
@@ -224,101 +260,14 @@
   </td>
 </tr>          
 
-    <tr onmouseout="camp_stop()" onmouseover="camp_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/camp.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/camp.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function camp_start() {
-            document.getElementById('camp_image').style.opacity = "1";
-          }
 
-          function camp_stop() {
-            document.getElementById('camp_image').style.opacity = "0";
-          }
-          camp_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://camp-nerf.github.io/">
-          <span class="papertitle">CamP: Camera Preconditioning for Neural Radiance Fields</span>
-        </a>
-        <br>
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <strong>Jonathan T. Barron</strong>,
-        <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>
-        <br>
-        <em>SIGGRAPH Asia</em>, 2023
-        <br>
-        <a href="https://camp-nerf.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2308.10902">arXiv</a>
-        <p></p>
-        <p>
-        Preconditioning based on camera parameterization helps NeRF and camera extrinsics/intrinsics optimize better together.
-        </p>
-      </td>
-    </tr>
-
-    
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/zipnerf.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/zipnerf.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function zipnerf_start() {
-              document.getElementById('zipnerf_image').style.opacity = "1";
-            }
-
-            function zipnerf_stop() {
-              document.getElementById('zipnerf_image').style.opacity = "0";
-            }
-            zipnerf_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="http://jonbarron.info/zipnerf">
-            <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
-          </a>
-          <br>
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>
-          <br>
-          <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Finalist)</strong></font>
-          <br>
-          <a href="http://jonbarron.info/zipnerf">project page</a>
-          /
-          <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
-          /
-          <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
-          <p></p>
-          <p>
-          Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
-          </p>
-        </td>
-      </tr>
       </tbody></table>
 
           
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Miscellanea</h2>
+                <h2>Industrial Collaborations</h2>
               </td>
             </tr>
           </tbody></table>
