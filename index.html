@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <!-- Add Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </head>
 
   <body>
@@ -53,6 +54,7 @@
           <tr onmouseout="dpi_stop()" onmouseover="dpi_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
+                <div class="two" id='dpi_image'><img src='images/dpi.gif' width=100% height=100%></div>
                 <img src='images/dpi.jpg' width=100% height=100%>
               </div>
               <script type="text/javascript">
@@ -84,13 +86,11 @@
           </tr>
         
 
-
-
-
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr onmouseout="m2curl_stop()" onmouseover="m2curl_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
+          <div class="two" id='m2curl_image'><img src='images/m2curl.gif' width=100% height=100%></div>
           <img src='images/m2curl.jpg' width=100% height=75%>
         </div>
         <script type="text/javascript">
@@ -173,15 +173,16 @@
     <tr onmouseout="tac2_stop()" onmouseover="tac2_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <img src='images/TacProMPs2.jpg' width=100% height=75%>
+          <div class="two" id='tacpromps2_image'><img src='images/tacpromps2.gif' width=100% height=100%></div>
+          <img src='images/tacpromps2.jpg' width=100% height=75%>
         </div>
         <script type="text/javascript">
           function tac2_start() {
-            document.getElementById('recon_image').style.opacity = "1";
+            document.getElementById('tacpromps2_image').style.opacity = "1";
           }
 
           function tac2_stop() {
-            document.getElementById('recon_image').style.opacity = "0";
+            document.getElementById('tacpromps2_image').style.opacity = "0";
           }
           tac2_stop()
         </script>
@@ -204,20 +205,22 @@
       </td>
     </tr>
 
-    <tr onmouseout="tac_stop()" onmouseover="tac_start()">
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr onmouseout="tacpromps_stop()" onmouseover="tacpromps_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <img src='images/TacProMPs.jpg' width=100% height=75%>
+          <div class="two" id='tacpromps_image'><img src='images/tacpromps.gif' width=100% height=100%></div>
+          <img src='images/tacpromps.jpg' width=100% height=75%>
         </div>
         <script type="text/javascript">
-          function tac_start() {
-            document.getElementById('recon_image').style.opacity = "1";
+          function tacpromps_start() {
+            document.getElementById('tacpromps_image').style.opacity = "1";
           }
 
-          function tac_stop() {
-            document.getElementById('recon_image').style.opacity = "0";
+          function tacpromps_stop() {
+            document.getElementById('tacpromps_image').style.opacity = "0";
           }
-          tac_stop()
+          tacpromps_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
